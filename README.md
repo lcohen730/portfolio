@@ -1,0 +1,1 @@
+# This is the Software Engineering portfolio for Laura Cohen.

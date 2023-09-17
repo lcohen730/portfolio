@@ -1,0 +1,100 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+
+/* CSS Custom Properties */
+:root {
+  --eggplant: #45214a;
+  --violet: #323050;
+  --blue: #21445b;
+  --teal: #1a6566;
+  --green: #5d8a66;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: var(--white); */
+  padding: 2vmin;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1618576980905-8b704806a39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2815&q=80");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  color: var(--black);
+}
+
+#root {
+  height: 100%;
+}
+
+h1 {
+  /* color: var(--green); */
+  /* color: var(--white); */
+  margin-top: 5vmin;
+}
+
+/* h3 { */
+  /* color: var(--teal); */
+  /* color: var(--white); */
+  /* margin-top: -5vmin; */
+/* } */
+
+.sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.sections button {
+  margin: 2vmin 40vw;
+  font-size: 2vw;
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+  border-radius: 2vmin;
+  /* border: 0.5vmin solid white; */
+  color: var(--white);
+}
+
+.aboutBtn {
+  background-color: var(--blue);
+}
+
+.projectsBtn {
+  background-color: var(--violet);
+}
+
+.contactBtn {
+  background-color: var(--eggplant);
+}
+
+.about {
+  margin: 5vmin;
+  font-size: 5vmin;
+}
+
+.project {
+  /* border: 1vmin double var(--violet); */
+  border: 1vmin double var(--black);
+  border-radius: 2vmin;
+  margin: 5vmin 25vw;
+  padding: 5vmin 10vmin;
+  /* color: var(--violet); */
+}
+
+h5 {
+  margin-bottom: 1vmin;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
