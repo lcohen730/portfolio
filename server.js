@@ -5,6 +5,8 @@ const app = express();
 const PORT = 7000;
 const path = require('path');
 
+app.use(express.static('public'));
+
 app.get('*', (req, res) => {
 	res.sendFile(path.resolve(path.join(__dirname, 'public', 'index.html')))
 })
