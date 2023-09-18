@@ -1,8 +1,14 @@
-/* require('dotenv').config()
+/* require('dotenv').config() */
 
-const app = require('./app-server');
-const PORT = process.env.PORT || 7000
+const express = require('express');
+const app = express();
+const PORT = 7000;
+const path = require('path');
+
+app.get('*', (req, res) => {
+	res.sendFile(path.resolve(path.join(__dirname, 'public', 'index.html')))
+})
 
 app.listen(PORT, () => {
 	console.log(`${PORT} points to Ravenclaw`)
-}) */
+})

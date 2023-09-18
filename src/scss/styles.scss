@@ -30,6 +30,7 @@ body {
   background-image: url("https://images.unsplash.com/photo-1618576980905-8b704806a39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2815&q=80");
   /* background-repeat: no-repeat; */
   background-size: cover;
+  /* background-color: rgb(175, 165, 195); */
   color: var(--black);
 }
 
@@ -77,17 +78,31 @@ h1 {
 }
 
 .about {
-  margin: 5vmin;
-  font-size: 5vmin;
+  margin: 3vmin 25vw;
+  font-size: 3vmin;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project {
   /* border: 1vmin double var(--violet); */
   border: 1vmin double var(--black);
   border-radius: 2vmin;
-  margin: 5vmin 25vw;
+  margin: 3vmin /* 25vw */;
   padding: 5vmin 10vmin;
   /* color: var(--violet); */
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project h4 {
+  margin-bottom: 4vmin;
 }
 
 h5 {
@@ -97,4 +112,12 @@ h5 {
 .link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.normText {
+  margin-bottom: 3vmin;
+}
+
+.contact {
+  margin: 3vmin;
 }

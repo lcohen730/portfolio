@@ -50,9 +50,13 @@ export default function App() {
 						<div className="project">
 							<h4>MASTERMIND GAME</h4>
 							<h5>BUILT WITH</h5>
-							<div>HTML, CSS, and Javascript</div>
+							<div className="normText">
+								HTML, CSS, and Javascript
+							</div>
 							<h5>DESCRIPTION</h5>
-							<div>Guess the Secret Code</div>
+							<div className="normText">
+								Guess the Secret Code
+							</div>
 							<h5>LINKS</h5>
 							<div
 								className="link"
@@ -60,7 +64,6 @@ export default function App() {
 							>
 								GitHub Repository
 							</div>
-							<br />
 							<div
 								className="link"
 								onClick={() => handleLinkClick('https://stately-gumdrop-33cd7c.netlify.app/')}
@@ -72,10 +75,13 @@ export default function App() {
 						<div className="project">
 							<h4>SHOPPING CART API</h4>
 							<h5>BUILT WITH</h5>
-							<div>Javascript (Node.js, Express, Mongoose, and Jest)</div>
+							<div className="normText">
+								Javascript (Node.js, Express, Mongoose, and Jest)
+							</div>
 							<h5>DESCRIPTION</h5>
-							<div>RESTful API with CRUD Functionality for Users, Items, and Shopping</div>
-							<div>Cart</div>
+							<div className="normText">
+								RESTful API with CRUD Functionality for Users, Items, and Shopping Cart
+							</div>
 							<h5>LINKS</h5>
 							<div
 								className="link"
@@ -88,10 +94,13 @@ export default function App() {
 						<div className="project">
 							<h4>CURIOSITY SHOPPE</h4>
 							<h5>BUILT WITH</h5>
-							React, Javascript (ES6), SCSS, Gulp, and Webpack
+							<div className="normText">
+								React, Javascript (ES6), SCSS, Gulp, and Webpack
+							</div>
 							<h5>DESCRIPTION</h5>
-							Fullstack E-Commerce Application Implementing User Authentication
-							and CRUD Functionality
+							<div className="normText">
+								Fullstack E-Commerce Application Implementing User Authentication and CRUD Functionality
+							</div>
 							<h5>LINKS</h5>
 							<div
 								className="link"
@@ -99,10 +108,35 @@ export default function App() {
 							>
 								Github Repository
 							</div>
-							<br />
 							<div
 								className="link"
 								onClick={() => handleLinkClick('https://curiosity.lauracohen.me/')}
+							>
+								Deployed Link
+							</div>
+						</div>
+						<div className="project">
+							<h4>BUCKETS AND BEYOND</h4>
+							<h5>BUILT WITH</h5>
+							<div className="normText">
+								React, Javascript (ES6), SCSS, Gulp, and Webpack
+							</div>
+							<h5>DESCRIPTION</h5>
+							<div className="normText">
+								<div>Eight-Person Team Project Inspired by Home Depot</div>
+								<div>Fullstack E-Commerce Application Implementing User Authentication and CRUD Functionality</div>
+								<div>My Roles: Lead Designer, Front-End Development, Wireframes, Documenter, Proofreader</div>
+							</div>
+							<h5>LINKS</h5>
+							<div
+								className="link"
+								onClick={() => handleLinkClick('https://github.com/jillianguerra/home-depot')}
+							>
+								Github Repository
+							</div>
+							<div
+								className="link"
+								onClick={() => handleLinkClick('https://buckets-and-beyond.tech/home')}
 							>
 								Deployed Link
 							</div>
@@ -117,13 +151,16 @@ export default function App() {
 				{contactOpen ? (
 					<div className="contact">
 						<h4>PHONE</h4>
-						(860) 559-9574
+						<div className="normText">
+							(860) 559-9574
+						</div>
 						<h4>EMAIL</h4>
-						lcohen730@gmail.com
+						<div className="normText">
+							lcohen730@gmail.com
+						</div>
 						<h4
 							className="link"
 							onClick={() => handleLinkClick('https://www.linkedin.com/in/lauracohen2/')}
-
 						>
 							LINKEDIN
 						</h4>
