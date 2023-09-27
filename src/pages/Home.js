@@ -164,6 +164,13 @@ export default function App() {
 						>
 							LINKEDIN
 						</h4>
+						<div className="lineBreak"></div>
+						<h4
+							className="link"
+							onClick={() => handleLinkClick('https://docs.google.com/document/d/11KKygqRKxsN13hDYA7mDdjUkZBifjNct45Z8mqoT6Nc/edit?usp=sharing')}
+						>
+							RESUME
+						</h4>
 					</div>
 				) : (
 					""
