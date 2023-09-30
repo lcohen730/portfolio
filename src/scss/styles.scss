@@ -38,19 +38,42 @@ body {
   height: 100%;
 }
 
-h1 {
-  /* color: var(--green); */
-  /* color: var(--white); */
-  margin-top: 5vmin;
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 3vmin;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: .1vmin solid var(--black);
+  font-size: 3vmin;
 }
 
+.menu div:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header {
+  font-size: 4vmin;
+  text-decoration: underline;
+  margin-top: 5vmin;
+  /* text-align: left; */
+  padding: 1vmin;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* h1 { */
+/* color: var(--green); */
+/* color: var(--white); */
+/* margin-top: 5vmin;
+} */
+
 /* h3 { */
-  /* color: var(--teal); */
-  /* color: var(--white); */
-  /* margin-top: -5vmin; */
+/* color: var(--teal); */
+/* color: var(--white); */
+/* margin-top: -5vmin; */
 /* } */
 
-.sections {
+/* .sections {
   display: flex;
   flex-direction: column;
 }
@@ -60,12 +83,12 @@ h1 {
   font-size: 2vw;
   padding-top: 2vmin;
   padding-bottom: 2vmin;
-  border-radius: 2vmin;
-  /* border: 0.5vmin solid white; */
-  color: var(--white);
-}
+  border-radius: 2vmin; */
+/* border: 0.5vmin solid white; */
+/* color: var(--white);
+} */
 
-.aboutBtn {
+/* .aboutBtn {
   background-color: var(--blue);
 }
 
@@ -75,11 +98,26 @@ h1 {
 
 .contactBtn {
   background-color: var(--eggplant);
-}
+} */
 
 .about {
-  margin: 3vmin 25vw;
+  display: flex;
+  align-items: center;
+}
+
+.about img {
+  height: 30vmin;
+  margin-top: 4vmin;
+  margin-right: -30vmin;
+  margin-left: 30vmin;
+  border-radius: 2vmin;
+  border: 1vmin double var(--black);
+}
+
+.about div {
+  margin: 4vmin 20vw 0;
   font-size: 3vmin;
+  text-align: left;
 }
 
 .projects {
@@ -92,7 +130,9 @@ h1 {
   /* border: 1vmin double var(--violet); */
   border: 1vmin double var(--black);
   border-radius: 2vmin;
-  margin: 3vmin /* 25vw */;
+  margin: 3vmin
+    /* 25vw */
+  ;
   padding: 5vmin 10vmin;
   /* color: var(--violet); */
   width: 40vw;
@@ -120,8 +160,33 @@ h5 {
 
 .contact {
   margin: 3vmin;
+  margin-bottom: 5vmin;
 }
 
 .lineBreak {
   height: 2vmin;
+}
+
+/* .scrollBtnPosition {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+} */
+
+.scrollToTopBtn {
+  border-radius: 50%;
+  border: .3vmin solid var(--black);
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  font-size: 5vmin;
+  padding-bottom: 6vmin;
+}
+
+.scrollToTopBtn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
 }
