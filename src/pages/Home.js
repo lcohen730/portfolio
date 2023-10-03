@@ -59,6 +59,15 @@ export default function App() {
 				<div onClick={() => scrollToSection(projects)}>PROJECTS</div>
 				<div onClick={() => scrollToSection(contact)}>CONTACT</div>
 			</div>
+			{/* <img
+				className="homePic"
+				src="https://i.imgur.com/GWVaGQO.jpg"
+				alt="Barcelonnette Field"
+			/> */}
+			<div className="imageContainer">
+				<h1>LAURA COHEN</h1>
+				<h3>SOFTWARE ENGINEER</h3>
+			</div>
 			<div ref={about} className="header">ABOUT ME</div>
 			<div className="about">
 				<img

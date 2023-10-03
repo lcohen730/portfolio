@@ -27,10 +27,10 @@ body {
   /* background-color: var(--white); */
   padding: 2vmin;
   height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1618576980905-8b704806a39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2815&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1618576980905-8b704806a39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2815&q=80"); */
   /* background-repeat: no-repeat; */
-  background-size: cover;
-  /* background-color: rgb(175, 165, 195); */
+  /* background-size: cover; */
+  background-color: rgb(193, 184, 209);
   color: var(--black);
 }
 
@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 3vmin;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
   border-bottom: .1vmin solid var(--black);
   font-size: 3vmin;
 }
@@ -52,13 +52,42 @@ body {
   text-decoration: underline;
 }
 
+/* .homePic {
+  width: 98vw;
+  height: 90vh;
+} */
+
+.imageContainer {
+  /* background-image: url("https://i.imgur.com/GWVaGQO.jpg"); */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/968/002/non_2x/cute-abstract-modern-background-free-vector.jpg");
+  background-size: cover;
+  width: 98vw;
+  height: 90vh;
+  padding-top: 40vmin;
+}
+
+/* .imageContainer h1, .imageContainer h3 {
+  text-align: right;
+  margin-right: 3vmin;
+} */
+
+.imageContainer h1 {
+  font-weight: 700;
+  font-size: 10vmin;
+}
+
+.imageContainer h3 {
+  font-weight: 600;
+  font-size: 5.85vmin;
+}
+
 .header {
   font-size: 4vmin;
   text-decoration: underline;
   margin-top: 5vmin;
   /* text-align: left; */
   padding: 1vmin;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* h1 { */
