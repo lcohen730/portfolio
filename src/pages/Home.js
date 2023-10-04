@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
+/* import ScrollToTop from '../components/ScrollToTop/ScrollToTop'; */
 
 export default function App() {
 	/* const [aboutOpen, setAboutOpen] = useState(false);
