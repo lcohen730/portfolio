@@ -30,7 +30,9 @@ body {
   /* background-image: url("https://images.unsplash.com/photo-1618576980905-8b704806a39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2815&q=80"); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
-  background-color: rgb(193, 184, 209);
+  /* background-color: rgb(193, 184, 209); */
+  background-color: rgb(213, 182, 170);
+  /* background-color: rgb(170, 208, 213); */
   color: var(--black);
 }
 
@@ -59,7 +61,9 @@ body {
 
 .imageContainer {
   /* background-image: url("https://i.imgur.com/GWVaGQO.jpg"); */
-  background-image: url("https://static.vecteezy.com/system/resources/previews/004/968/002/non_2x/cute-abstract-modern-background-free-vector.jpg");
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/004/968/002/non_2x/cute-abstract-modern-background-free-vector.jpg"); */
+  /* background-image: url("https://www.creativefabrica.com/wp-content/uploads/2022/05/17/pastel-aesthetic-background-Graphics-30684243-1.jpg"); */
+  background-image: url("https://img.freepik.com/premium-vector/hand-drawn-floral-background_23-2149032851.jpg");
   background-size: cover;
   width: 98vw;
   height: 90vh;
@@ -74,11 +78,13 @@ body {
 .imageContainer h1 {
   font-weight: 700;
   font-size: 10vmin;
+  color: rgb(109, 88, 34);
 }
 
 .imageContainer h3 {
   font-weight: 600;
   font-size: 5.85vmin;
+  color: rgb(109, 88, 34);
 }
 
 .header {
