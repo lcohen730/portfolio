@@ -9,6 +9,7 @@
   --teal: #1a6566;
   --green: #5d8a66;
   --white: #ffffff;
+  --cream: #fffefd;
   --black: #000000;
 }
 
@@ -25,7 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: var(--white); */
-  padding: 2vmin;
+  /* padding: 2vmin; */
   height: 100vh;
   /* background-image: url("https://images.unsplash.com/photo-1618576980905-8b704806a39b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2815&q=80"); */
   /* background-repeat: no-repeat; */
@@ -65,7 +66,7 @@ body {
   /* background-image: url("https://www.creativefabrica.com/wp-content/uploads/2022/05/17/pastel-aesthetic-background-Graphics-30684243-1.jpg"); */
   background-image: url("https://img.freepik.com/premium-vector/hand-drawn-floral-background_23-2149032851.jpg");
   background-size: cover;
-  width: 98vw;
+  /* width: 98vw; */
   height: 90vh;
   padding-top: 40vmin;
 }
@@ -90,7 +91,7 @@ body {
 .header {
   font-size: 4vmin;
   text-decoration: underline;
-  margin-top: 5vmin;
+  /* margin-top: 5vmin; */
   /* text-align: left; */
   padding: 1vmin;
   background-color: rgba(255, 255, 255, 0.3);
@@ -138,6 +139,7 @@ body {
 .about {
   display: flex;
   align-items: center;
+  margin-bottom: 5vmin;
 }
 
 .about img {
@@ -159,6 +161,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: var(--cream);
+  padding: 5vmin 0;
 }
 
 .project {
@@ -168,16 +172,29 @@ body {
   margin: 3vmin
     /* 25vw */
   ;
-  padding: 5vmin 10vmin;
+  padding: 5vmin;
   /* color: var(--violet); */
-  width: 40vw;
+  width: 45vw;
+  display: flex;
+}
+
+.projectText {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40vmin;
+  text-align: right;
 }
 
 .project h4 {
   margin-bottom: 4vmin;
+}
+
+.project img {
+  height: 45vmin;
+  border-radius: 2vmin;
+  border: 1vmin double var(--black);
+  margin-left: 7vmin;
 }
 
 h5 {
@@ -195,11 +212,17 @@ h5 {
 
 .contact {
   margin: 3vmin;
-  margin-bottom: 5vmin;
+  padding-bottom: 3vmin;
+  display: flex;
+  justify-content: center;
 }
 
 .lineBreak {
   height: 2vmin;
+}
+
+.contactItem img {
+  width: 10vmin;
 }
 
 /* .scrollBtnPosition {
@@ -209,16 +232,16 @@ h5 {
 } */
 
 .scrollToTopBtn {
-  border-radius: 50%;
+  /* border-radius: 50%;
   border: .3vmin solid var(--black);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5); */
   position: fixed;
   bottom: 15px;
   right: 20px;
   height: 40px;
-  width: 40px;
-  font-size: 5vmin;
-  padding-bottom: 6vmin;
+  /* width: 40px; */
+  /* font-size: 5vmin;
+  padding-bottom: 6vmin; */
 }
 
 .scrollToTopBtn:hover {
