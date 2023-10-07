@@ -89,7 +89,49 @@ export default function App() {
 				<div className="project">
 					<div className="projectText">
 						<h4>MASTERMIND GAME</h4>
+						<div className="normText">
+							Guess the Secret Code
+						</div>
 						<h5>BUILT WITH</h5>
+						{/* <div className="normText">
+							HTML, CSS, and Javascript */}
+						<div className="skills">
+							<div className="skillContainer">
+								<img
+									src="https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/HTML5-256.png"
+									alt="html5 logo"
+								/>
+								<p>HTML</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn0.iconfinder.com/data/icons/logos-21/40/CSS3-256.png"
+									alt="css3 logo"
+								/>
+								<p>CSS</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/logo-javascript-256.png"
+									alt="js logo"
+								/>
+								<p>Javascript</p>
+							</div>
+						</div>
+						<h5>LINKS</h5>
+						<div className="links">
+							<img
+								src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png"
+								alt="github logo"
+								onClick={() => handleLinkClick('https://github.com/lcohen730/Mastermind_Game_GA_Unit_1_Project')}
+							/>
+							<img
+								src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/website-256.png"
+								alt="deployed website logo"
+								onClick={() => handleLinkClick('https://stately-gumdrop-33cd7c.netlify.app/')}
+							/>
+						</div>
+						{/* <h5>BUILT WITH</h5>
 						<div className="normText">
 							HTML, CSS, and Javascript
 						</div>
@@ -109,7 +151,7 @@ export default function App() {
 							onClick={() => handleLinkClick('https://stately-gumdrop-33cd7c.netlify.app/')}
 						>
 							Deployed Link
-						</div>
+						</div> */}
 						<br />
 					</div>
 					<img
@@ -403,7 +445,7 @@ export default function App() {
 			{
 				showBtn &&
 				<img
-					src="https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/up-256.png"
+					src="https://cdn4.iconfinder.com/data/icons/essential-app-2/16/up-menu-arrow-botton-256.png"
 					alt="up arrow"
 					className="scrollToTopBtn"
 					onClick={scrollToTop}
