@@ -142,20 +142,56 @@ export default function App() {
 				<div className="project">
 					<div className="projectText">
 						<h4>SHOPPING CART API</h4>
-						<h5>BUILT WITH</h5>
-						<div className="normText">
-							Javascript (Node.js, Express, Mongoose, and Jest)
-						</div>
-						<h5>DESCRIPTION</h5>
 						<div className="normText">
 							RESTful API with CRUD Functionality for Users, Items, and Shopping Cart
 						</div>
+						<h5>BUILT WITH</h5>
+						<div className="skills">
+							<div className="skillContainer">
+								<img
+									src="https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/logo-javascript-256.png"
+									alt="js logo"
+								/>
+								<p>Javascript</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/node-js-256.png"
+									alt="node js logo"
+								/>
+								<p>Node JS</p>
+							</div>
+							{/* <div className="skillContainer">
+								<img
+									src="https://expressjs.com/images/express-facebook-share.png"
+									alt="express logo"
+								/>
+							</div> */}
+							<div className="skillContainer">
+								<img
+									src="https://cdn4.iconfinder.com/data/icons/logos-3/512/mongodb-2-256.png"
+									alt="mongo db logo"
+								/>
+								<p>Mongo DB</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/jest-256.png"
+									alt="jest logo"
+								/>
+								<p>Jest</p>
+							</div>
+						</div>
+						{/* <div className="normText">
+							Javascript (Node.js, Express, Mongoose, and Jest)
+						</div> */}
 						<h5>LINKS</h5>
-						<div
-							className="link"
-							onClick={() => handleLinkClick('https://github.com/lcohen730/shopping-cart-api')}
-						>
-							GitHub Repository
+						<div className="links">
+							<img
+								src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png"
+								alt="github logo"
+								onClick={() => handleLinkClick('https://github.com/lcohen730/shopping-cart-api')}
+							/>
 						</div>
 					</div>
 					<img
@@ -167,26 +203,62 @@ export default function App() {
 				<div className="project">
 					<div className="projectText">
 						<h4>CURIOSITY SHOPPE</h4>
-						<h5>BUILT WITH</h5>
-						<div className="normText">
-							React, Javascript (ES6), SCSS, Gulp, and Webpack
-						</div>
-						<h5>DESCRIPTION</h5>
 						<div className="normText">
 							Fullstack E-Commerce Application Implementing User Authentication and CRUD Functionality
 						</div>
-						<h5>LINKS</h5>
-						<div
-							className="link"
-							onClick={() => handleLinkClick('https://github.com/lcohen730/ye-olde-curiosity-shoppe')}
-						>
-							Github Repository
+						<h5>BUILT WITH</h5>
+						<div className="skills">
+							<div className="skillContainer">
+								<img
+									src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/react-256.png"
+									alt="react logo"
+								/>
+								<p>React</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/logo-javascript-256.png"
+									alt="js logo"
+								/>
+								<p>Javascript</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://sass-lang.com/assets/img/styleguide/seal-black.png"
+									alt="scss logo"
+								/>
+								<p>SCSS</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/gulp-256.png"
+									alt="gulp logo"
+								/>
+								<p>Gulp</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn3.iconfinder.com/data/icons/teenyicons-solid-vol-3/15/webpack-256.png"
+									alt="webpack logo"
+								/>
+								<p>Webpack</p>
+							</div>
 						</div>
-						<div
-							className="link"
-							onClick={() => handleLinkClick('https://curiosity.lauracohen.me/')}
-						>
-							Deployed Link
+						{/* <div className="normText">
+							React, Javascript, SCSS, Gulp, and Webpack
+						</div> */}
+						<h5>LINKS</h5>
+						<div className="links">
+							<img
+								src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png"
+								alt="github logo"
+								onClick={() => handleLinkClick('https://github.com/lcohen730/ye-olde-curiosity-shoppe')}
+							/>
+							<img
+								src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/website-256.png"
+								alt="deployed website logo"
+								onClick={() => handleLinkClick('https://curiosity.lauracohen.me/')}
+							/>
 						</div>
 					</div>
 					<img
@@ -197,28 +269,64 @@ export default function App() {
 				<div className="project">
 					<div className="projectText">
 						<h4>BUCKETS AND BEYOND</h4>
-						<h5>BUILT WITH</h5>
-						<div className="normText">
-							React, Javascript (ES6), SCSS, Gulp, and Webpack
-						</div>
-						<h5>DESCRIPTION</h5>
 						<div className="normText">
 							<div>Eight-Person Team Project Inspired by Home Depot</div>
 							<div>Fullstack E-Commerce Application Implementing User Authentication and CRUD Functionality</div>
 							<div>My Roles: Lead Designer, Front-End Development, Wireframes, Documenter, Proofreader</div>
 						</div>
-						<h5>LINKS</h5>
-						<div
-							className="link"
-							onClick={() => handleLinkClick('https://github.com/jillianguerra/home-depot')}
-						>
-							Github Repository
+						<h5>BUILT WITH</h5>
+						<div className="skills">
+							<div className="skillContainer">
+								<img
+									src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/react-256.png"
+									alt="react logo"
+								/>
+								<p>React</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/logo-javascript-256.png"
+									alt="js logo"
+								/>
+								<p>Javascript</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://sass-lang.com/assets/img/styleguide/seal-black.png"
+									alt="scss logo"
+								/>
+								<p>SCSS</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/gulp-256.png"
+									alt="gulp logo"
+								/>
+								<p>Gulp</p>
+							</div>
+							<div className="skillContainer">
+								<img
+									src="https://cdn3.iconfinder.com/data/icons/teenyicons-solid-vol-3/15/webpack-256.png"
+									alt="webpack logo"
+								/>
+								<p>Webpack</p>
+							</div>
 						</div>
-						<div
-							className="link"
-							onClick={() => handleLinkClick('https://buckets-and-beyond.tech/home')}
-						>
-							Deployed Link
+						{/* <div className="normText">
+							React, Javascript, SCSS, Gulp, and Webpack
+						</div> */}
+						<h5>LINKS</h5>
+						<div className="links">
+							<img
+								src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-256.png"
+								alt="github logo"
+								onClick={() => handleLinkClick('https://github.com/jillianguerra/home-depot')}
+							/>
+							<img
+								src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/website-256.png"
+								alt="deployed website logo"
+								onClick={() => handleLinkClick('https://buckets-and-beyond.tech/home')}
+							/>
 						</div>
 					</div>
 					<img
