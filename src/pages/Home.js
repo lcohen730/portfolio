@@ -269,11 +269,11 @@ export default function App() {
 				<div className="project">
 					<div className="projectText">
 						<h4>BUCKETS AND BEYOND</h4>
-						<div className="normText">
-							<div>Eight-Person Team Project Inspired by Home Depot</div>
-							<div>Fullstack E-Commerce Application Implementing User Authentication and CRUD Functionality</div>
-							<div>My Roles: Lead Designer, Front-End Development, Wireframes, Documenter, Proofreader</div>
-						</div>
+						<ul className="normText">
+							<li>Eight-Person Team Project Inspired by Home Depot</li>
+							<li>Fullstack E-Commerce Application Implementing User Authentication and CRUD Functionality</li>
+							<li>My Roles: Lead Designer, Front-End Development, Wireframes, Documenter, Proofreader</li>
+						</ul>
 						<h5>BUILT WITH</h5>
 						<div className="skills">
 							<div className="skillContainer">

@@ -90,7 +90,7 @@ body {
 
 .header {
   font-size: 4vmin;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   /* margin-top: 5vmin; */
   /* text-align: left; */
   padding: 1vmin;
@@ -254,4 +254,178 @@ h5 {
 .scrollToTopBtn:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* @media only screen and (max-width: 480px) { */
+@media only screen and (max-width: 1327px) {
+  .menu {
+    padding: 3vmin;
+    border-bottom: .1vmin solid var(--black);
+    font-size: 4vmin;
+  }
+  
+  .imageContainer {
+    /* background-image: url("https://img.freepik.com/premium-vector/hand-drawn-floral-background_23-2149032851.jpg");
+    background-size: cover; */
+    /* width: 98vw; */
+    /* height: 90vh; */
+    padding-top: 60vmin;
+  }
+  
+  .imageContainer h1 {
+    font-weight: 700;
+    font-size: 10vmin;
+  }
+  
+  .imageContainer h3 {
+    font-weight: 600;
+    font-size: 5.85vmin;
+  }
+  
+  .header {
+    font-size: 6vmin;
+    /* margin-top: 5vmin; */
+    /* text-align: left; */
+    padding: 1vmin;
+  }
+  
+  .about {
+    flex-direction: column;
+  }
+  
+  .about img {
+    height: 35vmin;
+    margin-top: 4vmin;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .about div {
+    margin: 4vmin 15vw 0;
+    font-size: 5vmin;
+  }
+  
+  /* .projects {
+    padding: 5vmin 0;
+  } */
+  
+  .project {
+    /* border-radius: 2vmin;
+    margin: 3vmin;
+    padding: 5vmin; */
+    width: 80vw;
+    flex-direction: column-reverse;
+  }
+  
+  .projectText {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 68vmin;
+    text-align: left;
+    margin-top: 5vmin;
+  }
+  
+  .skills, .links {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .skills p {
+    background: rgba(0, 2, 4, 0.72);
+    color: #ffffff;
+    font-size: 1.5vmin;
+    opacity: 0;
+    transition: .2s ease;
+    text-align: center;
+    margin-top: -5.75vmin;
+    margin-right: -1.5vmin;
+    margin-left: 1vmin;
+    /* padding: 0 1vmin; */
+    border-radius: 5vmin;
+  }
+  
+  .skills p:hover {
+    opacity: 1;
+  }
+  
+  .skills img, .links img {
+    height: 5vmin;
+    width: 5vmin;
+    margin-bottom: 2vmin;
+    margin-left: 3vmin;
+  }
+  
+  /* .skills img {
+    transition: .5s ease;
+  } */
+  
+  .links img {
+    transition: .5s ease;
+  }
+  
+  .links img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .5s ease;
+  }
+  
+  .project > img {
+    height: 45vmin;
+    border-radius: 2vmin;
+    border: 1vmin double var(--black);
+    margin-left: 7vmin;
+  }
+  
+  h5 {
+    margin-bottom: 1vmin;
+  }
+  
+  .link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .normText {
+    margin-bottom: 3vmin;
+  }
+  
+  .contact {
+    margin: 3vmin;
+    padding-bottom: 3vmin;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .lineBreak {
+    height: 2vmin;
+  }
+  
+  .contactItem img {
+    width: 10vmin;
+  }
+  
+  /* .scrollBtnPosition {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+  } */
+  
+  .scrollToTopBtn {
+    border-radius: 50%;
+    /* border: .3vmin solid var(--black);
+    background-color: rgba(255, 255, 255, 0.5); */
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    height: 40px;
+    /* width: 40px; */
+    /* font-size: 5vmin;
+    padding-bottom: 6vmin; */
+  }
+  
+  .scrollToTopBtn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 }
