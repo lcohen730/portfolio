@@ -1,12 +1,19 @@
 import { useState, useRef, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 /* import ScrollToTop from '../components/ScrollToTop/ScrollToTop'; */
 
 export default function App() {
 	const [showBtn, setShowBtn] = useState(false);
+	const [msgSubmitted, setMsgSubmitted] = useState(false);
 
 	const about = useRef(null);
 	const projects = useRef(null);
 	const contact = useRef(null);
+	const form = useRef();
+
+	const serviceId = process.env.EMAILJS_SERVICE_ID;
+	const templateId = process.env.EMAILJS_TEMPLATE_ID;
+	const publicKey = process.env.EMAILJS_PUBLIC_KEY;
 
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
@@ -35,6 +42,23 @@ export default function App() {
 
 	const handleLinkClick = (url) => {
 		window.open(url, "_blank", "noreferrer")
+	}
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		emailjs.sendForm(serviceId, templateId, form.current, publicKey)
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
+
+		setMsgSubmitted(true);
+	};
+
+	const newForm = () => {
+		setMsgSubmitted(false);
 	}
 
 	return (
@@ -336,10 +360,26 @@ export default function App() {
 				</div>
 			</div>
 			<div ref={contact} className="header">CONTACT</div>
+			{msgSubmitted ?
+				<div className="emailForm">
+					<p>MESSAGE SUBMITTED</p>
+					<button onClick={newForm} className="formBtn">SEND ANOTHER MESSAGE</button>
+				</div>
+				:
+				<form ref={form} onSubmit={sendEmail} className="emailForm">
+					<label>NAME </label>
+					<input type="text" name="user_name" /><br />
+					<label>EMAIL </label>
+					<input type="email" name="user_email" /><br />
+					<label>MESSAGE </label>
+					<textarea name="message" /><br />
+					<input type="submit" value="SEND" className="formBtn" />
+				</form>
+			}
 			<div className="contact">
-				<div className="contactItem">
-					{/* <h4>EMAIL</h4> */}
-					<h4>
+				{/* <div className="contactItem"> */}
+				{/* <h4>EMAIL</h4> */}
+				{/* <h4>
 						<img
 							src="https://cdn3.iconfinder.com/data/icons/social-rounded-2/72/Email-256.png"
 							alt="email logo"
@@ -347,8 +387,8 @@ export default function App() {
 					</h4>
 					<div className="normText">
 						lcohen730@gmail.com
-					</div>
-				</div>
+					</div> */}
+				{/* </div> */}
 				<div className="contactItem">
 					<h4
 						className="link"
