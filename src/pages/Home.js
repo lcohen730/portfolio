@@ -371,8 +371,10 @@ export default function App() {
 					<input type="text" name="user_name" /><br />
 					<label>EMAIL </label>
 					<input type="email" name="user_email" /><br />
-					<label>MESSAGE </label>
-					<textarea name="message" /><br />
+					<div className="message">
+						<label>MESSAGE </label>
+						<textarea name="message" />
+					</div>
 					<input type="submit" value="SEND" className="formBtn" />
 				</form>
 			}

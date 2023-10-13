@@ -8,6 +8,7 @@
   --blue: #21445b;
   --teal: #1a6566;
   --green: #5d8a66;
+  --dark-golden: rgb(109, 88, 34);
   --white: #ffffff;
   --cream: #fffefd;
   --black: #000000;
@@ -79,13 +80,13 @@ body {
 .imageContainer h1 {
   font-weight: 700;
   font-size: 10vmin;
-  color: rgb(109, 88, 34);
+  color: var(--dark-golden);
 }
 
 .imageContainer h3 {
   font-weight: 600;
   font-size: 5.85vmin;
-  color: rgb(109, 88, 34);
+  color: var(--dark-golden);
 }
 
 .header {
@@ -231,6 +232,7 @@ h5 {
   margin: 5vmin 38vmax;
   padding: 5vmin;
   border-radius: 2vmin;
+  border: 1vmin double var(--black);
 }
 
 .emailForm label {
@@ -239,6 +241,10 @@ h5 {
 
 form input, form textarea {
   margin-top: 1vmin;
+}
+
+.message {
+  margin-left: -1vmin;
 }
 
 .formBtn {
