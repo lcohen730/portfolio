@@ -64,6 +64,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<div className="menu">
+			{/* <div className={showBtn ? "menuScroll" : "menu"}> */}
 				<div onClick={() => scrollToSection(about)}>ABOUT ME</div>
 				<div onClick={() => scrollToSection(projects)}>PROJECTS</div>
 				<div onClick={() => scrollToSection(contact)}>CONTACT</div>

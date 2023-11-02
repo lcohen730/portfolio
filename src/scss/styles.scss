@@ -8,6 +8,7 @@
   --blue: #21445b;
   --teal: #1a6566;
   --green: #5d8a66;
+  --light-golden: rgb(244, 187, 107);
   --dark-golden: rgb(109, 88, 34);
   --white: #ffffff;
   --cream: #fffefd;
@@ -42,18 +43,31 @@ body {
   height: 100%;
 }
 
+/* .menu, .menuScroll { */
 .menu {
   display: flex;
   justify-content: space-around;
   padding: 3vmin;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-bottom: .1vmin solid var(--black);
+  background-color: rgb(223, 198, 189);
+  /* border-bottom: .1vmin solid var(--black); */
   font-size: 3vmin;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 8vmin 5vmin rgb(109, 88, 34);
+}
+
+/* .menuScroll {
+  background-color: var(--light-golden);
+} */
+
+.menu div {
+  transition: .5s ease;
 }
 
 .menu div:hover {
   cursor: pointer;
   text-decoration: underline;
+  transition: .5s ease;
 }
 
 /* .homePic {
@@ -175,6 +189,7 @@ body {
 
 .skills p:hover {
   opacity: 1;
+  transition: .2s ease;
 }
 
 .skills img, .links img {
@@ -207,6 +222,10 @@ body {
 
 h5 {
   margin-bottom: 1vmin;
+}
+
+.link {
+  transition: .5s ease;
 }
 
 .link:hover {
@@ -253,16 +272,19 @@ form input, form textarea {
   border: .2vmin solid var(--black);
   border-radius: 2vmin;
   padding: 0 1.5vmin;
+  transition: .5s ease;
 }
 
 .formBtn:hover {
   background-color: rgb(213, 182, 170);
   color: var(--black);
+  transition: .5s ease;
 }
 
 .contactItem img {
   width: 5vmin;
   margin: 2vmin 1vmin;
+  transition: .5s ease;
 }
 
 .lineBreak {
@@ -286,11 +308,13 @@ form input, form textarea {
   /* width: 40px; */
   /* font-size: 5vmin;
   padding-bottom: 6vmin; */
+  transition: .2s ease;
 }
 
 .scrollToTopBtn:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.7);
+  transition: .2s ease;
 }
 
 /* @media only screen and (max-width: 480px) { */
