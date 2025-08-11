@@ -282,7 +282,7 @@ export default function App() {
 							<img
 								src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/website-256.png"
 								alt="deployed website logo"
-								onClick={() => handleLinkClick('https://curiosity.lauracohen.live/')}
+								onClick={() => handleLinkClick('https://curiosity-shoppe.netlify.app/')}
 							/>
 						</div>
 					</div>
