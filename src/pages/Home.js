@@ -347,11 +347,11 @@ export default function App() {
 								alt="github logo"
 								onClick={() => handleLinkClick('https://github.com/jillianguerra/home-depot')}
 							/>
-							<img
+							{/* <img
 								src="https://cdn2.iconfinder.com/data/icons/picol-vector/32/website-256.png"
 								alt="deployed website logo"
 								onClick={() => handleLinkClick('https://buckets-and-beyond.tech/home')}
-							/>
+							/> */}
 						</div>
 					</div>
 					<img
